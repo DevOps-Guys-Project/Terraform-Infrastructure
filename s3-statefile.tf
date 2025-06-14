@@ -2,12 +2,12 @@
 
 # S3 Bucket Itself
 resource "aws_s3_bucket" "s3_state_bucket" {
-  bucket = "s3-state-bucket-devopsguys"
+  bucket              = "s3-state-bucket-devopsguys"
   object_lock_enabled = true
 
-#   lifecycle {
-#     prevent_destroy = true
-#   }
+  lifecycle {
+    prevent_destroy = true
+  }
 
   tags = {
     Name = "s3StateBucket"
@@ -28,7 +28,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "s3_state_bucket_e
 
   rule {
     apply_server_side_encryption_by_default {
-      sse_algorithm = "AES256" 
+      sse_algorithm = "AES256"
     }
   }
 }

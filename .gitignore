@@ -24,3 +24,7 @@ terraform.rc
 # Sensitive variable files (optional)
 *.tfvars
 *.tfvars.json
+
+# Ignore the pub key file for ec2
+*.pub
+terraform-ec2

@@ -1,6 +1,6 @@
 #S3 Bucket to store remote terrafrom statefile
 
-# S3 Bucket Itself
+# S3 Bucket Resource
 resource "aws_s3_bucket" "s3_state_bucket" {
   bucket              = "s3-state-bucket-devopsguys"
   object_lock_enabled = true

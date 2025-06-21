@@ -9,6 +9,7 @@ terraform {
   }
 }
 
+# AWS region to spin up resources from this config repository
 provider "aws" {
   region = "eu-west-2"
 }

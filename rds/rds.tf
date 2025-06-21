@@ -1,3 +1,4 @@
+# MySQL database creation for web servers data persistence
 resource "aws_db_instance" "rds_mysql" {
   allocated_storage       = 20
   storage_type            = "gp2"

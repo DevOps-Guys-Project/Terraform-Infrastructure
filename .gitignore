@@ -28,3 +28,6 @@ terraform.rc
 # Ignore the pub key file for ec2
 *.pub
 terraform-ec2
+
+# Personal VSCode IDE config
+.vscode

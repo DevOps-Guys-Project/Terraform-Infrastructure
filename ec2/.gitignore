@@ -29,7 +29,5 @@ terraform.rc
 *.pub
 terraform-ec2
 
-/secrets/*
-
 # Personal VSCode IDE config
 .vscode
